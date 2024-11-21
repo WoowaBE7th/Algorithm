@@ -7,13 +7,9 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		String input = bf.readLine();
-		
-		String[] arr = input.split(" ");
-		int answer = solution(Integer.parseInt(arr[0]), Integer.parseInt(arr[1]));
-		
+		StringTokenizer st = new StringTokenizer(bf.readLine());
+		int answer = solution(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));
 		System.out.println(answer);
-		
 		bf.close();
 	}
 	
@@ -26,7 +22,6 @@ public class Main {
 		
 		int cnt = 0;
 		for(int i = 2; i <= N && cnt != K; i++) {
-			
 			for(int j = 1; j*i < N+1; j++) {
 				if(arr[j*i] != 0 && arr[j*i] % i == 0) {
 					cnt++;
@@ -36,7 +31,6 @@ public class Main {
 					}
 					arr[j*i] = 0;
 				}
-				
 			}
 		}
 		
