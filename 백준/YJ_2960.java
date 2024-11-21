@@ -14,17 +14,17 @@ public class Main {
 		for (int i = 2; i <= n; i++) {
 			int j = 1;
 			if (!num[i]) {
-				while (cnt != k && i * j <= n) {
+				while (i * j <= n) {
 					if (!num[i * j]) {
 						num[i * j] = true;
 						cnt++;
 					}
+					if (cnt == k) {
+						System.out.println(i * j);
+						return;
+					}
 					j++;
 				}
-			}
-			if (cnt == k) {
-				System.out.println(i * --j);
-				break;
 			}
 		}
 	}
