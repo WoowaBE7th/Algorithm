@@ -32,7 +32,6 @@ public class Main {
 			if(number > 1) bw.write(number + " ");
 			bw.write("\n");
 		}
-		
 		br.close();
 		bw.close();
 	}
