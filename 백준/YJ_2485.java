@@ -1,3 +1,4 @@
+import java.util.*;
 import java.io.*;
 
 public class Main {
@@ -15,9 +16,6 @@ public class Main {
 			if (i > 0) {
 				distance[i - 1] = tree[i] - tree[i - 1];
 			}
-		}
-		for (int i = 0; i < n - 2; i++) {
-			gcd(distance[i], distance[i + 1]);
 		}
 		int gcd = findGcd(0);
 		System.out.println((tree[n - 1] - tree[0]) / gcd + 1 - n);
