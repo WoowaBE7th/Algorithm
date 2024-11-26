@@ -1,4 +1,4 @@
-public class BOJ456 {
+public class Main {
 
     public static void main(String[] args) throws Exception {
         int n = read();
