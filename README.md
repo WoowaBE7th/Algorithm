@@ -8,6 +8,19 @@
 2. 자료구조, 알고리즘 구현
     - 풀이에 사용했던 알고리즘 혹은 자료구조 구현하기
 
+## Convention
+### Pull Request
+- `[N주차] 이름`
+- 예시) [1주차] 백제완
+
+### Commit
+- `이름: 문제 번호 문제 이름`
+- 예시) 백제완: 1001 A-B
+
+### File Name
+- `이니셜_문제 번호.java`
+- 예시) JW_1001.java
+
 ## 일정
 ### 1주차 [수학](https://www.acmicpc.net/problemset?sort=ac_desc&algo=124)
 - GCD/LCM
@@ -54,16 +67,3 @@
     - Dijkstra Algorithm(다익스트라)
     - Floyd Warshall Algorithm(플로이드 와샬)
     - Bellman Ford Algorithm(벨만 포드)
-
-## Convention
-### Pull Request
-- `[N주차] 이름`
-- 예시) [1주차] 백제완
-
-### Commit
-- `이름: 문제 번호 문제 이름`
-- 예시) 백제완: 1001 A-B
-
-### File Name
-- `이니셜_문제 번호.java`
-- 예시) JW_1001.java
